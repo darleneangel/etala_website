@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.profile-container {
+  padding: 30px;
+  color: white;
+}
+
+.profile-title {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.profile-card {
+  background: rgba(255,255,255,0.12);
+  padding: 20px;
+  border-radius: 14px;
+  line-height: 1.7;
+}
+
+.edit-btn, .save-btn, .cancel-btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background: #3b82f6;
+}
+
+.edit-btn:hover {
+  background: #2563eb;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: rgba(255,255,255,0.12);
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.profile-form input,
+.profile-form select,
+.profile-form textarea {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255,255,255,0.2);
+  color: white;
+}
+
+.btn-row {
+  display: flex;
+  gap: 10px;
+}
+
+.save-btn {
+  background: #22c55e;
+}
+
+.save-btn:hover {
+  background: #16a34a;
+}
+
+.cancel-btn {
+  background: #ef4444;
+}
+
+.cancel-btn:hover {
+  background: #b91c1c;
+}

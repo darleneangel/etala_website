@@ -1,0 +1,197 @@
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  color: white;
+  background: linear-gradient(to bottom, #101726, #182338, #0b132b);
+  overflow: hidden;
+}
+
+.dashboard-card {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  color: white;
+  min-width: 260px;
+  transition: 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.18);
+}
+
+.dashboard-card h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.dashboard-card .number {
+  font-size: 36px;
+  font-weight: 800;
+  color: #60a5fa;
+}
+
+
+/* SIDEBAR */
+.sidebar {
+  width: 240px;
+  background: rgba(255,255,255,0.06);
+  border-right: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(12px);
+  transition: width 0.3s ease;
+  padding: 20px 15px;
+}
+
+.dashboard-container.collapsed .sidebar {
+  width: 70px;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sidebar-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.toggle-btn {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* MENU */
+.menu {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.menu-item {
+  background: none;
+  color: white;
+  border: none;
+  text-align: left;
+  font-size: 1rem;
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  transition: 0.25s;
+}
+
+.menu-item:hover,
+.menu-item.active {
+  background: rgba(255,255,255,0.18);
+}
+
+.logout {
+  margin-top: auto;
+  background: rgba(255,50,50,0.3);
+}
+
+/* MAIN CONTENT */
+.main-content {
+  flex: 1;
+  padding: 30px 40px;
+  overflow-y: auto;
+}
+
+.fade {
+  animation: fade 0.4s ease;
+}
+
+@keyframes fade {
+  from { opacity:0; transform: translateY(10px); }
+  to { opacity:1; transform: translateY(0); }
+}
+
+/* HEADER */
+.top-header h1 {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.subtitle {
+  margin-top: 5px;
+  opacity: 0.8;
+}
+
+/* ANNOUNCEMENTS – HORIZONTAL */
+.horizontal-section {
+  margin-top: 25px;
+}
+
+.announcement-row {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 15px 0;
+}
+
+.announcement-card {
+  min-width: 250px;
+  background: rgba(255,255,255,0.12);
+  padding: 15px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.announcement-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* QUICK SERVICES */
+.quick-grid {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.service-btn {
+  background: #3b82f6;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.service-btn:hover {
+  background: #2563eb;
+}
+
+/* EMERGENCY CARD */
+.emergency-card {
+  background: rgba(255,255,255,0.12);
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+/* GENERIC PAGE STYLING FOR OTHER PAGES */
+.page {
+  padding: 40px 50px;
+}
+
+.page-title {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.page-card {
+  background: rgba(255,255,255,0.12);
+  border-radius: 18px;
+  padding: 25px;
+  margin-top: 20px;
+}

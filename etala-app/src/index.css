@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.service-card {
+  @apply bg-white shadow-md rounded-2xl p-8 text-center transition transform hover:-translate-y-1 hover:shadow-xl;
+}
+
+.icon-wrapper {
+  @apply mx-auto w-20 h-20 bg-gradient-to-br from-red-500 to-blue-500 rounded-full flex items-center justify-center shadow-md mb-4;
+}
+
+.service-icon {
+  @apply text-3xl text-white;
+}
+
+.service-title {
+  @apply text-xl font-semibold text-gray-800 mb-2;
+}
+
+.service-desc {
+  @apply text-gray-600 text-sm leading-relaxed;
+}
+.services-section {
+  @apply py-16 bg-gray-100;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.animate-fadeUp {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.animate-scaleUp {
+  animation: scaleUp 0.3s ease forwards;
+}
+.service-popup-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  animation: fadeIn 0.3s ease;
+}

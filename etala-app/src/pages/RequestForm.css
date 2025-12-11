@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.rf-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #101726, #182338, #0b132b);
+  padding: 20px;
+  color: white;
+}
+
+.rf-card {
+  width: 450px;
+  background: rgba(255,255,255,0.07);
+  padding: 30px;
+  border-radius: 18px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  animation: popup 0.3s ease;
+}
+
+.rf-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.rf-subtitle {
+  font-size: 15px;
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+.rf-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.rf-group label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.rf-group input,
+.rf-group textarea {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 12px;
+  border-radius: 10px;
+  color: white;
+  outline: none;
+}
+
+.rf-group textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.rf-btn {
+  width: 100%;
+  padding: 12px;
+  background: #3b82f6;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.rf-btn:hover {
+  background: #2563eb;
+}
+
+.rf-back {
+  margin-top: 15px;
+  text-align: center;
+  color: #93c5fd;
+  cursor: pointer;
+}
+
+.rf-back:hover {
+  text-decoration: underline;
+}
+
+@keyframes popup {
+  from { opacity: 0; transform: scale(0.7); }
+  to { opacity: 1; transform: scale(1); }
+}
